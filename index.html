@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caravan</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- inicio menu -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+      <a class="navbar-brand" href="#">
+        <img src="./img/caravan.svg" alt="Caravan" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- o valor associado ao data-target do button deve ser igual ao id da div abaixo  -->
+      <!-- qd utilizamos a classe colapse estamos informando que esse sera o conteudo que sera escondido qd for para versao mobile ou tablet -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- mr-auto: margin-right com valor auto -->
+        <!-- ml-auto: margin-left com valor auto -->
+        <!-- o 5 é a maior margin que o bootstrap consegue dar -->
+        <ul class="navbar-nav ml-auto">
+          <!-- se tivermos mais de um dropdown vamos ter que colocar ids diferente neles -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Locais
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="local.html">California</a>
+              <a class="dropdown-item" href="local.html">Paris</a>
+              <a class="dropdown-item" href="local.html">Dublin</a>
+            </div>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="./planos.html">Planos </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/.contato.html">Contato</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+
+          <li class="nav-item">
+            <!-- o ml-md-2 da um margin-left de 2 nas telas com no minimo de md (768px) -->
+            <a class="btn btn-outline-primary ml-md-2" href="inscricao.html"
+              >Inscreva-se</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fim menu -->
+
+    <!-- <script src="./js/jquery.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
