@@ -4,14 +4,13 @@
 <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Caravan | Local</title>
+        <title>Caravan | Planos</title>
         <link rel="stylesheet" href="./css/bootstrap.min.css" />
         <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
         <!-- inicio modal -->
-        <!-- Modal -->
         <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
                 <div class="modal-dialog">
                         <div class="modal-content">
@@ -63,8 +62,7 @@
                                 <!-- se tivermos mais de um dropdown vamos ter que colocar ids diferente neles -->
                                 <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                active>
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 Locais
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -75,7 +73,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                        <a class="nav-link" href="./planos.html">Planos </a>
+                                        <a class="nav-link active" href="./planos.html">Planos </a>
                                 </li>
 
                                 <li class="nav-item">
@@ -97,96 +95,74 @@
         <!-- fim menu -->
 
         <!-- inicio secao 1 -->
-        <section class="text-center container">
-                <div class="my-5">
-                        <span class="h6 text-uppercase d-block">O melhor destino da sua viagem</span>
-                        <h1 class="display-4 text-primary">Descubra Dublin</h1>
+        <section class="container">
+                <div class="my-5 text-center">
+                        <span class="h6 text-uppercase d-block">seu plano, sua viagem</span>
+                        <h1 class="display-4 text-primary">Escolha o plano</h1>
                 </div>
 
                 <div class="row">
-                        <!-- usando apenas o col as colunas vao ter o mesmo tamanho -->
-                        <div class="col-md">
-                                <img class="img-fluid mb-4" src="./img/local/foto-1.jpg" alt="#">
-                                <img class="img-fluid mb-4" src="./img/local/foto-2.jpg" alt="#">
-                                <img class="img-fluid mb-4" src="./img/local/foto-3.jpg" alt="#">
-                        </div>
+                        <div class="col-md-6 mb-5">
+                                <!-- colocamos mais essa div do bg-light pq se nao essa coluna ficaria grudada na outra -->
+                                <div class="bg-light rounded p-4 box-shadow">
+                                        <h2>Gold</h2>
 
-                        <div class="col-md">
-                                <img class="img-fluid mb-4" src="./img/local/foto-4.jpg" alt="#">
-                                <img class="img-fluid mb-4" src="./img/local/foto-5.jpg" alt="#">
-                        </div>
+                                        <ul class="list-unstyled lista-plano">
+                                                <li class="p-3">&#8594; 30 dias de viagem</li>
+                                                <li class="p-3">&#8594; 3 destinos diferentes</li>
+                                                <li class="p-3">&#8594; Tudo pago pela empresa</li>
+                                                <li class="p-3">&#8594; Ingressos para festas</li>
+                                        </ul>
 
-                        <div class="col-md">
-                                <img class="img-fluid mb-4" src="./img/local/foto-6.jpg" alt="#">
-                                <img class="img-fluid mb-4" src="./img/local/foto-7.jpg" alt="#">
+                                        <form action="">
+                                                <div class="form-group">
+                                                        <select id="cidades" class="form-control bg-light">
+                                                          <option selected>Selecione a cidade</option>
+                                                          <option>California</option>
+                                                          <option>Paris</option>
+                                                          <option>Dublin</option>
+                                                        </select>
+                                                      </div>
+                                        </form>
+
+                                        <div class="row align-items-center mt-4">
+                                                <div class="col"><a href="inscricao.html" class="btn btn-primary btn-lg btn-block">Comprar Plano</a></div>
+                                                <div class="col"><span class="h4">R$5.000</span></div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6">
+                                <div class="bg-light rounded p-4 box-shadow">
+                                        <h2>Platinum <span class="badge badge-success">Novo</span></h2>
+
+                                        <ul class="list-unstyled lista-plano">
+                                                <li class="p-3">&#8594; 30 dias de viagem</li>
+                                                <li class="p-3">&#8594; 3 destinos diferentes</li>
+                                                <li class="p-3">&#8594; Tudo pago pela empresa</li>
+                                                <li class="p-3">&#8594; Ingressos para festas</li>
+                                        </ul>
+
+                                        <form action="">
+                                                <div class="form-group">
+                                                        <select id="cidades" class="form-control bg-light">
+                                                          <option selected>Selecione a cidade</option>
+                                                          <option>California</option>
+                                                          <option>Paris</option>
+                                                          <option>Dublin</option>
+                                                        </select>
+                                                      </div>
+                                        </form>
+
+                                        <div class="row align-items-center mt-4">
+                                                <div class="col"><a href="inscricao.html" class="btn btn-primary btn-lg btn-block">Comprar Plano</a></div>
+                                                <div class="col"><span class="h4">R$7.000</span></div>
+                                        </div>
+                                </div>
                         </div>
                 </div>
+
         </section>
         <!-- fim secao 1 -->
-
-        <!-- inicio secao 2 -->
-        <section class="container">
-                <div class="my-5 text-center">
-                        <span class="h6 text-uppercase d-block">descubra o que acontece na cidade</span>
-                        <h1 class="display-4 text-primary">próximos eventos</h1>
-                </div>
-
-                <table class="table table-hover table-responsive-md">
-                        <thead>
-                                <tr>
-                                        <th scope="col">Data</th>
-                                        <th scope="col">Evento</th>
-                                        <th scope="col">Local</th>
-                                        <th scope="col">Ticket</th>
-                                </tr>
-                        </thead>
-                        <tbody>
-                                <tr>
-                                        <th scope="row">23/10</th>
-                                        <td>Julien Baker</td>
-                                        <td>The Academy</td>
-                                        <td><a href="#" class="btn btn-outline-secondary">Comprar Ticket</a></td>
-                                </tr>
-
-                                <tr>
-                                        <th scope="row">25/10</th>
-                                        <td>Lucy Rose</td>
-                                        <td>Olympia</td>
-                                        <td><a href="#" class="btn btn-outline-secondary">Comprar Ticket</a></td>
-                                </tr>
-
-                                <tr>
-                                        <th scope="row">27/10</th>
-                                        <td>Bon Iver</td>
-                                        <td>Whelans</td>
-                                        <td><a href="#" class="btn btn-outline-secondary">Comprar Ticket</a></td>
-                                </tr>
-
-                                <tr>
-                                        <th scope="row">23/10</th>
-                                        <td>Julien Baker</td>
-                                        <td>The Academy</td>
-                                        <td><a href="#" class="btn btn-outline-secondary">Comprar Ticket</a></td>
-                                </tr>
-
-                                <tr>
-                                        <th scope="row">25/10</th>
-                                        <td>Lucy Rose</td>
-                                        <td>Olympia</td>
-                                        <td><a href="#" class="btn btn-outline-secondary">Comprar Ticket</a></td>
-                                </tr>
-
-                                <tr>
-                                        <th scope="row">27/10</th>
-                                        <td>Bon Iver</td>
-                                        <td>Whelans</td>
-                                        <td><a href="#" class="btn btn-outline-secondary">Comprar Ticket</a></td>
-                                </tr>
-
-                        </tbody>
-                </table>
-        </section>
-        <!-- fim secao 2 -->
 
         <footer class="bg-dark text-white mt-5">
                 <div class="container py-4">

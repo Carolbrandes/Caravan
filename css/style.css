@@ -12,9 +12,15 @@ body{
     background-size: cover;
 }
 
-.pergunta{
+.pergunta, .lista-plano li{
     border-bottom: 1px solid #cccccc;
 }
+
+.lista-plano li:last-of-type{
+    border: none;
+}
+
+
 
 @media (max-width: 767px){
     #home-quote  .display-4{
