@@ -1,0 +1,32 @@
+{
+  "name": "caravan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch scss/styles.scss:css/styles.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carolbrandes/Caravan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carolbrandes/Caravan/issues"
+  },
+  "homepage": "https://github.com/Carolbrandes/Caravan#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "popper": "^1.0.1",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  }
+}
